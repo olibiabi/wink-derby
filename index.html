@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wink Derby</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=2" />
+</head>
+<body>
+  <main id="stage">
+    <form id="nameForm" class="overlay" hidden autocomplete="off">
+      <h1>WINK<br><span>DERBY</span></h1>
+      <label for="nameInput">what's your name?</label>
+      <input id="nameInput" maxlength="7" spellcheck="false" placeholder="NAME" />
+      <button type="submit">OK</button>
+      <p id="nameErr" class="err"></p>
+    </form>
+    <form id="codeForm" class="overlay" hidden autocomplete="off">
+      <label for="codeInput">room code</label>
+      <input id="codeInput" maxlength="4" spellcheck="false" placeholder="ABCD" />
+      <div class="row">
+        <button type="button" id="codeBack" class="alt">BACK</button>
+        <button type="submit">JOIN</button>
+      </div>
+      <p id="codeErr" class="err"></p>
+    </form>
+  </main>
+  <p class="help">
+    <b>wink left · wink right</b> = run &nbsp;·&nbsp; <b>open mouth</b> = jump puddles
+    <span class="kb">keyboard: F / J run · SPACE jump · arrows dress up</span>
+  </p>
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+  <script src="firebase-config.js?v=1"></script>
+  <script src="cats.js?v=2"></script>
+  <script src="face.js?v=2"></script>
+  <script src="net.js?v=2"></script>
+  <script src="sketch.js?v=5"></script>
+</body>
+</html>
